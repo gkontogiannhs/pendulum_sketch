@@ -6,7 +6,7 @@ class Pendulum{
         //this.pos = createVector(Math.sin(this.angle)*this.len + width/2, Math.cos(this.angle)*this.len);
         this.x = Math.sin(this.angle)*this.len + width/2;
         this.y = Math.cos(this.angle)*this.len;
-        //this.omega = Math.sqrt(9.81/this.len);
+        this.omega = Math.sqrt(9.81/this.len);
     }
 
     show(){
