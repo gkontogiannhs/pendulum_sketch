@@ -1,16 +1,23 @@
 const bounds = {'width': null, 'height': null};
-let initAngle = 0;
+const pendulum = [];
+const count = 5;
+
 
 function setup() {
   bounds.width = windowWidth;
   bounds.height = windowHeight;
   createCanvas(bounds.width, bounds.height);
-  pendulum = new Pendulum(200, 0);
+  for(let i=0; i<count; i++){
+    pendulum[i] = new Pendulum(random(100, 400), PI/4);
+  }
 
 }
 
 function draw() {
-  background(220);
-  pendulum.show();
-  pendulum.update();
+  background(235);
+
+  for(let i=0; i<count; i++){
+    pendulum[i].show();
+    pendulum[i].update();
+  }
 }
