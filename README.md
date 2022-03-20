@@ -1,1 +1,1 @@
-## This is a simple ideal pendulum based on Newtonian Physics built with the help of p5.js
+## This is a simple ideal pendulum based on Newtonian Physics built in p5.js library
